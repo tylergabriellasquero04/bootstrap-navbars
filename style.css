@@ -1,115 +1,39 @@
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.morning-brew {
-  background-color: #f8f9fa;
-}
-
-.morning-brew-logo {
-  width: 200px;
-  height: auto;
-  object-fit: contain;
-}
-
-.morning-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.morning-brew .nav-item {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2px;
-  padding-bottom: 0.5rem;
-  color: #E33E19;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  cursor: pointer !important;
+.morning-brew,
+.morning-brew .navbar {
+  background-color: #f8f9fa !important;
 }
 
 .morning-brew .nav-item .nav-link {
-  color: inherit;
-  font: inherit;
+  color: #E33E19;
 }
 
-.morning-brew .nav-item.active {
-  padding-top: 0;
+.morning-brew .nav-item.active .nav-link {
   color: black;
 }
 
 .buzzs {
-  background-color: rgb(48, 73, 95);
+  background-color: rgb(48, 73, 95) !important;
   color: white;
 }
 
-.buzzs-nav {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-  align-items: center;
-  gap: 15px;
-}
-
-.buzzs .nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.buzzs .nav li {
-  list-style: none;
-}
-
-.buzzs .nav:first-child {
-  justify-content: flex-start;
-}
-
-.buzzs .nav:nth-child(2) {
-  justify-content: center;
-}
-
-.buzzs .nav:last-child {
-  justify-content: flex-end;
-}
-
-.buzzs h4 {
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 0;
+.buzzs .navbar {
   color: white;
-  white-space: nowrap;
-  cursor: pointer;
 }
 
-.buzzs img {
-  height: 70px;
-  width: auto;
-  object-fit: contain;
+.buzzs h4,
+.buzzs .bi {
+  color: white;
 }
 
-@media (max-width: 991px) {
-  .buzzs-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+.aloha-beer,
+.aloha-beer .navbar {
+  background-color: #f8f9fa !important;
+}
 
-  .buzzs .nav {
-    justify-content: center !important;
-    flex-wrap: wrap;
-  }
+.aloha-beer .nav-link {
+  color: black;
+}
 
-  .morning-menu {
-    flex-direction: column;
-    align-items: center;
-  }
+.aloha-beer .aloha-shop {
+  color: #EDC601;
 }
